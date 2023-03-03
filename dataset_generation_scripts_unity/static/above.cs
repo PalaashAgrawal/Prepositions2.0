@@ -35,11 +35,11 @@ public class above : Randomizer
 
         Vector3 random_position1 =  new Vector3(random_x,random_y,random_z);
         currentInstance1=GameObject.Instantiate(prefabs_mat1.Sample(),random_position1,Random.rotation);
-        currentInstance1.transform.localScale = Vector3.one * 0.1f;
+        currentInstance1.transform.localScale = Vector3.one;
 
         Vector3 random_position2 =  new Vector3(random_x,-random_y,random_z);        
         currentInstance2=GameObject.Instantiate(prefabs_mat2.Sample(),random_position2,Random.rotation);
-        currentInstance2.transform.localScale = Vector3.one * 0.1f;
+        currentInstance2.transform.localScale = Vector3.one;
 
         // camera randomisation code
         mainCamera.transform.position = Random.onUnitSphere * 10;
